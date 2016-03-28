@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./app",
     "target": "es5",
     "module": "system",
     "moduleResolution": "node",
@@ -9,6 +10,10 @@
     "removeComments": false,
     "noImplicitAny": false
   },
+  "filesGlob": [
+    "./dev/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "typings/main",
